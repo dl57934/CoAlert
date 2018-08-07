@@ -11,12 +11,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="netflixRecommanedSystem.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="netflixRecommanedSystem.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netflixRecommanedSystem.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
               <selected id="0" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataFile/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2400" />
           </provider>
         </entry>
       </file>
@@ -47,7 +54,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -63,6 +70,11 @@
             <path>
               <item name="sh_System" type="b2602c69:ProjectViewProjectNode" />
               <item name="sh_System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sh_System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sh_System" type="462c0819:PsiDirectoryNode" />
+              <item name="dataFile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -102,7 +114,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="1" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -112,7 +124,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5006519" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50065106" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -182,6 +194,11 @@
         <state>
           <selected id="0" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataFile/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2400" />
       </provider>
     </entry>
   </component>
