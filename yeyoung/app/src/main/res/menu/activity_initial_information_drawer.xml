@@ -6,20 +6,32 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="스킨케어" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="클렌징 / 필링" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="선케어" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="베이스" />
+
+        <item
+            android:id="@+id/eye_category"
+            android:title="아이"/>
+
+        <item
+            android:id="@+id/lip_category"
+            android:title="바디"/>
+
+        <item
+            android:id="@+id/body_category"
+            android:title="향수"/>
+
+        <item
+            android:id="@+id/others_category"
+            android:title="기타"/>
     </group>
 
     <item android:title="Communicate">
