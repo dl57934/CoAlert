@@ -14,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="study1.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="study1.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/study1.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="86" />
+              <selected id="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ratings_small.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/input/ratings_small.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -211,6 +220,13 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/ratings_small.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
