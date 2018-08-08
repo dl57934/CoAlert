@@ -6,45 +6,43 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:title="스킨케어" />
+            android:title="SKINCARE"
+            android:fontFamily="cursive"
+            />
         <item
             android:id="@+id/nav_gallery"
-            android:title="클렌징 / 필링" />
+            android:title="CLEANSING / PEELING"
+            android:fontFamily="cursive"/>
         <item
             android:id="@+id/nav_slideshow"
-            android:title="선케어" />
+            android:title="SUNCARE"
+            android:fontFamily="cursive"/>
         <item
             android:id="@+id/nav_manage"
-            android:title="베이스" />
+            android:title="BASE(CUSHION/FOUNDATION)"
+            android:fontFamily="cursive"/>
 
         <item
             android:id="@+id/eye_category"
-            android:title="아이"/>
-
-        <item
-            android:id="@+id/lip_category"
-            android:title="바디"/>
-
+            android:title="EYE"
+            android:fontFamily="cursive"/>
+<item
+    android:id="@+id/lip_category"
+    android:title="LIP"
+    android:fontFamily="cursive"/>
         <item
             android:id="@+id/body_category"
-            android:title="향수"/>
+            android:title="BODY"
+            android:fontFamily="cursive"/>
+
+        <item
+            android:id="@+id/perfume_category"
+            android:title="PERFUME"
+            android:fontFamily="cursive"/>
 
         <item
             android:id="@+id/others_category"
-            android:title="기타"/>
+            android:title="OTHERS"
+            android:fontFamily="cursive"/>
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
-
 </menu>

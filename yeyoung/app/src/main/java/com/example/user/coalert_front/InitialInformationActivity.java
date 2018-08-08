@@ -1,9 +1,16 @@
 package com.example.user.coalert_front;
 
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.TextPaint;
+import android.text.style.TypefaceSpan;
+import android.view.SubMenu;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -36,7 +43,23 @@ public class InitialInformationActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        Menu m = navigationView.getMenu();
+        for (int i=0;i<m.size();i++) {
+            MenuItem mi = m.getItem(i);
 
+            //for aapplying a font to subMenu ...
+            SubMenu subMenu = mi.getSubMenu();
+            if (subMenu!=null && subMenu.size() >0 ) {
+                for (int j=0; j <subMenu.size();j++) {
+                    MenuItem subMenuItem = subMenu.getItem(j);
+                    applyFontToMenuItem(subMenuItem);
+                }
+            }
+
+            //the method we have create in activity
+            applyFontToMenuItem(mi);
+        }
     }
 
     @Override
@@ -85,14 +108,59 @@ public class InitialInformationActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void applyFontToMenuItem(MenuItem mi) {
+        Typeface font = Typeface.createFromAsset(getAssets(), "ds_digi_b.TTF");
+        SpannableString mNewTitle = new SpannableString(mi.getTitle());
+        mNewTitle.setSpan(new CustomTypefaceSpan("" , font), 0 , mNewTitle.length(),  Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        //mNewTitle.setSpan(new AlignmentSpan.Standard(Layout.Alignment.ALIGN_CENTER), 0, mNewTitle.length(), 0); Use this if you want to center the items
+        mi.setTitle(mNewTitle);
+    }
+}
+
+class CustomTypefaceSpan extends TypefaceSpan {
+
+    private final Typeface newType;
+
+    public CustomTypefaceSpan(String family, Typeface type) {
+        super(family);
+        newType = type;
+    }
+
+    @Override
+    public void updateDrawState(TextPaint ds) {
+        applyCustomTypeFace(ds, newType);
+    }
+
+    @Override
+    public void updateMeasureState(TextPaint paint) {
+        applyCustomTypeFace(paint, newType);
+    }
+
+    private static void applyCustomTypeFace(Paint paint, Typeface tf) {
+        int oldStyle;
+        Typeface old = paint.getTypeface();
+        if (old == null) {
+            oldStyle = 0;
+        } else {
+            oldStyle = old.getStyle();
+        }
+
+        int fake = oldStyle & ~tf.getStyle();
+        if ((fake & Typeface.BOLD) != 0) {
+            paint.setFakeBoldText(true);
+        }
+
+        if ((fake & Typeface.ITALIC) != 0) {
+            paint.setTextSkewX(-0.25f);
+        }
+
+        paint.setTypeface(tf);
     }
 }

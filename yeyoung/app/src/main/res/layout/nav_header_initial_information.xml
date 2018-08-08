@@ -17,12 +17,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="cursive"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/nav_header_title_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
 </RelativeLayout>
