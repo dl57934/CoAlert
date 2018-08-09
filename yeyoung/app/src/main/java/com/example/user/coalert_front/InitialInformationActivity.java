@@ -1,29 +1,30 @@
 package com.example.user.coalert_front;
 
-import android.graphics.Paint;
-import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
+
+import android.app.LauncherActivity;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.TextPaint;
-import android.text.style.TypefaceSpan;
-import android.view.SubMenu;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class InitialInformationActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+private List<recyclerActivity> listItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,28 @@ public class InitialInformationActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        recyclerView = (RecyclerView)findViewById(R.id.recyclerview_protype);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        listItems=new ArrayList<>();
+
+        for(int i=0;i<=10;i++){
+            recyclerActivity listItem=new recyclerActivity(
+                    "heading"+(i+1),
+                    "Lorem ipsum dummy text"
+            );
+
+            listItems.add(listItem);
+        }
+
+
+        adapter=new MyAdapter(listItems,this);
+
+        recyclerView.setAdapter(adapter);
+
+
+/*        navigationView = (NavigationView) findViewById(R.id.nav_view);
         Menu m = navigationView.getMenu();
         for (int i=0;i<m.size();i++) {
             MenuItem mi = m.getItem(i);
@@ -59,7 +81,9 @@ public class InitialInformationActivity extends AppCompatActivity
 
             //the method we have create in activity
             applyFontToMenuItem(mi);
-        }
+        }*/
+
+
     }
 
     @Override
@@ -115,15 +139,15 @@ public class InitialInformationActivity extends AppCompatActivity
         return true;
     }
 
-    private void applyFontToMenuItem(MenuItem mi) {
+/*    private void applyFontToMenuItem(MenuItem mi) {
         Typeface font = Typeface.createFromAsset(getAssets(), "ds_digi_b.TTF");
         SpannableString mNewTitle = new SpannableString(mi.getTitle());
         mNewTitle.setSpan(new CustomTypefaceSpan("" , font), 0 , mNewTitle.length(),  Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         //mNewTitle.setSpan(new AlignmentSpan.Standard(Layout.Alignment.ALIGN_CENTER), 0, mNewTitle.length(), 0); Use this if you want to center the items
         mi.setTitle(mNewTitle);
-    }
+    }*/
 }
-
+/*
 class CustomTypefaceSpan extends TypefaceSpan {
 
     private final Typeface newType;
@@ -163,4 +187,4 @@ class CustomTypefaceSpan extends TypefaceSpan {
 
         paint.setTypeface(tf);
     }
-}
+}*/
