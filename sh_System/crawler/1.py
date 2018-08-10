@@ -32,18 +32,19 @@ type = {1: '건성', 2: '지성', 3: '중성', 4: '복합성', 5: '민감성'}
 url = getHtml.find_all('meta', {"itemprop": "url"})
 name = getHtml.find_all('meta', {"itemprop": "position"})
 data = []
-for i, name in enumerate(name[1:]):
+for i, name in enumerate(name[1:]): #화장품 이름, 설명 url
     print(name['content'])
     browser.get(url[i+1]['content'])
-    for j in range(1, 5):
-        browser.find_element_by_css_selector('.type > div:nth-child(2) > button:nth-child(1)').click()
-        browser.find_element_by_css_selector('.ui-list > li:nth-child(2) > div:nth-child(1) > button:nth-child(' + str(j) + ')').click()
-        # browser.find_element_by_css_selector(
-        #     '.ui-list > li:nth-child(2) > div:nth-child(1) > button:nth-child(' + str(j+1) + ')') \
-        #     .click()
-        for k in range(0, 5):
-            review = browser.find_element_by_css_selector('.review - list - wrap > li: nth - child('+str(k)+') > div:nth - child(1) > p: nth - child(2)').text
-            .review - list - wrap > li: nth - child(1) > div:nth - child(1) > p: nth - child(2)
+    for j in range(1, 5): #설명 url을 통해서
+        # browser.find_element_by_css_selector('.type > div:nth-child(2) > button:nth-child(1)').click()
+        # browser.find_element_by_css_selector('.ui-list > li:nth-child(2) > div:nth-child(1) > button:nth-child(' + str(j) + ')').click()
+        # browser.implicitly_wait(5)
+        browser.find_element_by_css_selector('div.ui-selectbox:nth-child(3) > button:nth-child(1)').click()
+        browser.find_element_by_css_selector('.ui-list > li:nth-child(3) > div:nth-child(1) > button:nth-child(1)').click()
+        for k in range(1, 5): #리뷰 따오기
+            css_selector = '.review-list-wrap > li:nth-child('+str(k)+') > div:nth-child(1) > p:nth-child(2)'
+            review = browser.find_element_by_css_selector(css_selector).text
+            print(review)
             rate = browser.find_element_by_css_selector('p.score').text
             data.append({'popId':i, 'type':j, 'review': review, 'rate': rate})
 
