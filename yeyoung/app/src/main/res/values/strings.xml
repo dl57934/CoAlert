@@ -27,4 +27,8 @@
     <string name="roundlab">라운드랩(ROUNDLAB)</string>
     <string name="dewytree">듀이트리(DUWYTREE)</string>
     <string name="laroche_posay">라로슈포제(LAROCHE-POSAY)</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
