@@ -11,23 +11,20 @@ import android.widget.TextView;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
-
+    private Context context;
     private List<recyclerActivity> listItems;
+    private int item_layout;
 
     public MyAdapter(List<recyclerActivity> listItems, Context context) {
         this.listItems = listItems;
         this.context = context;
+
     }
 
-    private Context context;
-
-
-
-    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v= LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.company_list,parent,false);
+                .inflate(R.layout.company_list,null);
         return new ViewHolder(v);
     }
 
