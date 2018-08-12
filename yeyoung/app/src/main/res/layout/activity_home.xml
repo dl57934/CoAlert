@@ -110,13 +110,6 @@
         app:layout_constraintTop_toTopOf="@+id/view"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview_protype"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
-        app:layout_constraintStart_toStartOf="@+id/scrollView2"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+
 
 </android.support.constraint.ConstraintLayout>
