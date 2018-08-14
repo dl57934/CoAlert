@@ -71,13 +71,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
         android:paddingLeft="160dp"
         android:paddingRight="160dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:orientation="vertical">
+        android:paddingTop="10dp">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -91,7 +91,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.3"
+        android:layout_weight="0.5"
         android:orientation="vertical">
 
         <GridLayout
@@ -99,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="8dp"
-            android:layout_weight="0.2"
+            android:layout_weight="0.3"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/skincare"
-
+                    android:fontFamily="cursive"
                     />
             </android.support.v7.widget.CardView>
 
@@ -149,7 +149,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/hanna_ttf"
+                    android:fontFamily="cursive"
                     android:text="@string/cleansing_peeling"
                     android:textAlignment="center" />
 
@@ -171,7 +171,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/suncare"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"/>
 
             </android.support.v7.widget.CardView>
 
@@ -193,7 +194,8 @@
                     android:layout_alignParentTop="true"
                     android:layout_gravity="center"
                     android:text="@string/base"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"/>
 
             </android.support.v7.widget.CardView>
 
@@ -213,7 +215,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/eye"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"/>
 
             </android.support.v7.widget.CardView>
 
@@ -233,7 +236,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/lip"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"/>
 
             </android.support.v7.widget.CardView>
 
@@ -253,7 +257,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/body"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"/>
 
             </android.support.v7.widget.CardView>
 
@@ -273,7 +278,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/perfume"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"/>
 
             </android.support.v7.widget.CardView>
 
@@ -293,25 +299,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/others"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"/>
 
             </android.support.v7.widget.CardView>
         </GridLayout>
 
     </LinearLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:menu="@menu/navigation">
 
-    </android.support.design.widget.BottomNavigationView>
 
 </LinearLayout>
