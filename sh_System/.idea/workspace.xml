@@ -26,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study1.ipynb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="study1.ipynb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/movieRecommaned/study1.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
@@ -47,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Recommaned.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Recommaned.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
@@ -280,7 +280,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -501,6 +501,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/movieRecommaned/study2.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -511,24 +518,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieRecommaned/study1.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieRecommaned/study2.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieRecommaned/study1.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="34" />
         </state>
       </provider>
     </entry>
