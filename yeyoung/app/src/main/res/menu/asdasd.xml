@@ -6,43 +6,43 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:title="SKINCARE"
+            android:title="@string/skincare"
             android:fontFamily="cursive"
             />
         <item
             android:id="@+id/nav_gallery"
-            android:title="CLEANSING / PEELING"
+            android:title="@string/cleansing_peeling"
             android:fontFamily="cursive"/>
         <item
             android:id="@+id/nav_slideshow"
-            android:title="SUNCARE"
+            android:title="@string/suncare"
             android:fontFamily="cursive"/>
         <item
             android:id="@+id/nav_manage"
-            android:title="BASE(CUSHION/FOUNDATION)"
+            android:title="@string/base"
             android:fontFamily="cursive"/>
 
         <item
             android:id="@+id/eye_category"
-            android:title="EYE"
+            android:title="@string/eye"
             android:fontFamily="cursive"/>
-<item
-    android:id="@+id/lip_category"
-    android:title="LIP"
-    android:fontFamily="cursive"/>
+        <item
+            android:id="@+id/lip_category"
+            android:title="@string/lip"
+            android:fontFamily="cursive"/>
         <item
             android:id="@+id/body_category"
-            android:title="BODY"
+            android:title="@string/body"
             android:fontFamily="cursive"/>
 
         <item
             android:id="@+id/perfume_category"
-            android:title="PERFUME"
+            android:title="@string/perfume"
             android:fontFamily="cursive"/>
 
         <item
             android:id="@+id/others_category"
-            android:title="OTHERS"
+            android:title="@string/others"
             android:fontFamily="cursive"/>
     </group>
 </menu>

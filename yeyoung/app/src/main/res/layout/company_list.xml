@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:id="@+id/a24"
+        android:fontFamily="serif-monospace"
+        android:text="@string/a24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/b_remedies"
+        android:fontFamily="serif-monospace"
+        android:text="@string/b_remedies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/makeprem"
+        android:fontFamily="serif-monospace"
+        android:text="@string/makeprem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/uv_lab"
+        android:fontFamily="serif-monospace"
+        android:text="@string/uv_lab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/cell_fusion_c"
+        android:fontFamily="serif-monospace"
+        android:text="@string/cell_fusion_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/biore"
+        android:fontFamily="serif-monospace"
+        android:text="@string/biore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/innisfree"
+        android:fontFamily="serif-monospace"
+        android:text="@string/innisfree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/roundlab"
+        android:fontFamily="serif-monospace"
+        android:text="@string/roundlab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dewytree"
+        android:fontFamily="serif-monospace"
+        android:text="@string/dewytree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/laroche_posay"
+        android:fontFamily="serif-monospace"
+        android:text="@string/laroche_posay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -19,7 +19,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        android:visibility="invisible"
         app:headerLayout="@layout/nav_header_initial_information"
-        app:menu="@menu/activity_initial_information_drawer" />
+        app:menu="@menu/asdasd" />
 
 </android.support.v4.widget.DrawerLayout>
