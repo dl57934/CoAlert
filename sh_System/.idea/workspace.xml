@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="20" />
+              <selected id="21" />
             </state>
           </provider>
         </entry>
@@ -289,7 +289,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50130206" side_tool="true" weight="0.14896552" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986979" visible="true" weight="0.23724137" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986979" visible="true" weight="0.24275862" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -603,7 +603,7 @@
     <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="20" />
+          <selected id="21" />
         </state>
       </provider>
     </entry>
