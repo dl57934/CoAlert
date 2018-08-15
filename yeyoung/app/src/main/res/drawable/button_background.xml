@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
-    <padding android:bottom="30dp"
-        android:left="30dp"
-        android:right="30dp"
-        android:top="30dp"/>
-    <solid android:color="#eeF781F3"/>
-
-<corners android:radius="50dp"/>
+    <solid android:color="#d8d8d8"/>
+    <corners android:radius="50dp"/>
+    <size android:height="30dp"
+        android:width="30dp"/>
 
 </shape>
