@@ -9,7 +9,8 @@
     <SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1">
+        android:layout_weight="0.1"
+        >
 
     </SearchView>
 
@@ -22,7 +23,9 @@
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="20dp"
+        >
 
         <TextView
             android:id="@+id/textView"
@@ -77,10 +80,10 @@
         android:layout_weight="0.3"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingBottom="10dp"
+        android:paddingBottom="40dp"
         android:paddingLeft="160dp"
         android:paddingRight="160dp"
-        android:paddingTop="10dp">
+        android:paddingTop="30dp">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -117,7 +120,8 @@
                 android:fontFamily="@font/amatic_bold"
                 android:paddingBottom="10dp"
                 android:text="@string/skincare"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
 
             <TextView
@@ -129,7 +133,8 @@
                 android:paddingBottom="10dp"
                 android:text="@string/cleansing_peeling"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
 
             <TextView
@@ -141,7 +146,8 @@
                 android:paddingBottom="10dp"
                 android:text="@string/suncare"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
 
             <TextView
@@ -155,7 +161,8 @@
                 android:paddingBottom="20dp"
                 android:text="@string/base"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
 
             <TextView
@@ -168,7 +175,8 @@
                 android:paddingTop="10dp"
                 android:text="@string/eye"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -180,7 +188,8 @@
                 android:paddingTop="5dp"
                 android:text="@string/lip"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -192,7 +201,8 @@
                 android:paddingTop="10dp"
                 android:text="@string/body"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -204,7 +214,8 @@
                 android:paddingTop="10dp"
                 android:text="@string/perfume"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
 
             <TextView
@@ -216,7 +227,8 @@
                 android:paddingTop="15dp"
                 android:text="@string/others"
                 android:textAlignment="center"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:clickable="true"/>
 
         </GridLayout>
 
