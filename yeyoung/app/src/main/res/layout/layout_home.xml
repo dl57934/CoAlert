@@ -9,8 +9,7 @@
     <SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        >
+        android:layout_weight="0.1">
 
     </SearchView>
 
@@ -32,10 +31,10 @@
             android:layout_margin="3dp"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
-
+            android:fontFamily="@font/rixgol"
             android:gravity="center_vertical|center"
             android:text='당신에게 유해한 성분은 '
-            android:textSize="15dp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/scrollView2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/scrollView2"
@@ -47,9 +46,10 @@
             android:layout_height="20dp"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:fontFamily="casual"
+            android:fontFamily="@font/rixgol"
             android:gravity="center_vertical|center"
             android:text="모든 성분"
+            android:textSize="16sp"
             android:textColor="@color/colorAccent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,9 +61,10 @@
             android:layout_height="25dp"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:fontFamily="casual"
+            android:fontFamily="@font/rixgol"
             android:gravity="center_vertical|center"
             android:text=" 입니다."
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +74,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2"
+        android:layout_weight="0.3"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingBottom="10dp"
@@ -87,13 +88,14 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:maxHeight="50dp"
-            app:srcCompat="@android:drawable/ic_input_add" />
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:background="#99ffffff"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:orientation="vertical">
 
         <GridLayout
@@ -105,42 +107,41 @@
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
-            android:padding="5dp"
-            >
+            android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/amatic_bold"
-                android:text="@string/skincare"
-                android:textSize="40dp"
                 android:layout_marginLeft="50dp"
-                android:paddingBottom="10dp"/>
+                android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="10dp"
+                android:text="@string/skincare"
+                android:textSize="35dp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="10dp"
                 android:text="@string/cleansing_peeling"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="30dp"
-                android:paddingBottom="10dp"/>
+                android:textSize="35dp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="10dp"
                 android:text="@string/suncare"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="50dp"
-                android:paddingBottom="10dp"/>
+                android:textSize="35dp" />
 
 
             <TextView
@@ -149,78 +150,77 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="20dp"
                 android:text="@string/base"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="30dp"
-                android:paddingBottom="20dp"/>
-
+                android:textSize="35dp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:text="@string/eye"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="50dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"/>
+                android:textSize="35dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
                 android:text="@string/lip"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="30dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="5dp"/>
+                android:textSize="35dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:text="@string/body"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="50dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"/>
+                android:textSize="35dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
                 android:text="@string/perfume"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="30dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"/>
+                android:textSize="35dp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
                 android:fontFamily="@font/amatic_bold"
+                android:paddingTop="15dp"
                 android:text="@string/others"
                 android:textAlignment="center"
-                android:textSize="40dp"
-                android:layout_marginLeft="50dp"
-                android:paddingTop="15dp"/>
+                android:textSize="35dp" />
 
-    </GridLayout>
-
-</LinearLayout>
-
+        </GridLayout>
 
     </LinearLayout>
+
+
+</LinearLayout>
