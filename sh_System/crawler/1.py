@@ -2,7 +2,6 @@ import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup as bs
 import time
-
 url = 'https://www.glowpick.com/beauty/ranking?id=25'
 browser = webdriver.Firefox(executable_path='geckodriver.exe')
 
