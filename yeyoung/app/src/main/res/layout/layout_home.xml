@@ -19,42 +19,44 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
         android:orientation="vertical"
-        android:paddingTop="20dp">
+        android:paddingTop="5dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="21dp"
+            android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
-            android:fontFamily="@font/rixgol"
+            android:fontFamily="@font/sangsangflowerroad"
             android:gravity="center_vertical|center"
             android:text='당신에게 유해한 성분은 '
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/badIngredient"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:fontFamily="@font/rixgol"
+            android:fontFamily="@font/sangsangflowerroad"
             android:gravity="center_vertical|center"
             android:text="모든 성분"
             android:textColor="@color/colorAccent"
-            android:textSize="16sp" />
+            android:textStyle="bold"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:fontFamily="@font/rixgol"
+            android:fontFamily="@font/sangsangflowerroad"
             android:gravity="center_vertical|center"
             android:text=" 입니다."
-            android:textSize="16sp" />
+            android:textStyle="bold"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,22 +65,21 @@
         android:layout_weight="0.3"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingBottom="35dp"
-        android:paddingLeft="160dp"
-        android:paddingRight="160dp"
-        android:paddingTop="25dp"
-
-        >
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_background"
+        android:clickable="true">
 
         <TextView
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:clickable="true"
-            android:fontFamily="@font/rixgol"
-            android:maxHeight="50dp"
-            android:text="리뷰 추가" />
+            android:fontFamily="@font/sangsangflowerroad"
+            android:text="리뷰 추가"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
     </LinearLayout>
 
     <LinearLayout

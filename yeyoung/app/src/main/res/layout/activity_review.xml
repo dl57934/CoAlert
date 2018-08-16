@@ -48,48 +48,80 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="1">
+                android:weightSum="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.3"
-                    android:gravity="center"
-                    android:background="@drawable/button_background">
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="GOOD" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/hanna"
+                        android:gravity="center"
+                        android:text="좋음"
+                        android:textColor="#FE642E"
+                        android:textSize="20sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.3"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.34"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/hanna"
+                        android:gravity="center"
+                        android:text="보통"
+                        android:textColor="#FFBF00"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
                     android:gravity="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MEDIUM" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.3"
-                    android:gravity="center">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BAD" />
+                        android:fontFamily="@font/hanna"
+                        android:text="나쁨"
+                        android:textColor="#08088A"
+                        android:textSize="20sp" />
 
                 </LinearLayout>
             </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자세한 리뷰"
+        android:fontFamily="@font/hanna"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:fontFamily="@font/hanna"
+        android:textSize="20sp"
+        android:layout_gravity="right|end"/>
+</LinearLayout>
         </LinearLayout>
     </ScrollView>
 
