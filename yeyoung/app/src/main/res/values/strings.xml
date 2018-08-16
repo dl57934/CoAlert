@@ -43,4 +43,5 @@
     <string name="title_notifications">Notifications</string>
 
     <string name="product_name">제품 이름</string>
+    <string name="company_name">회사 이름</string>
 </resources>

@@ -18,7 +18,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="@string/product_name" />
+            android:text="@string/product_name"
+            />
     </android.support.design.widget.AppBarLayout>
 
     <ScrollView
@@ -33,15 +34,16 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:orientation="vertical">
+                android:layout_height="350dp"
+                android:background="@drawable/suncream"
+                android:orientation="vertical"></LinearLayout>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/suncream" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sangsangflowerroad"
+                android:gravity="center"
+                android:text="@string/company_name" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +51,6 @@
                 android:orientation="horizontal"
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp"
-
                 android:weightSum="1">
 
                 <LinearLayout

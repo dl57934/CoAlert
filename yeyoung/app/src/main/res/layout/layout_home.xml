@@ -67,7 +67,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:background="@drawable/button_background"
+        android:background="@drawable/review_add_background"
         android:clickable="true">
 
         <TextView
