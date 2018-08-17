@@ -153,3 +153,23 @@ ko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/
 [GPU 16548, Chro
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1534533975482	geckodriver	INFO	geckodriver 0.21.0
+1534533975493	geckodriver	INFO	Listening on 127.0.0.1:58058
+1534533978546	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\LEESAN~1\\AppData\\Local\\Temp\\rust_mozprofile.s2RGgdswCNY8"
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+1534533980613	Marionette	INFO	Listening on port 58066
+1534533980877	Marionette	WARN	TLS certificate errors will be ignored for this session
+1534534007430	geckodriver	INFO	geckodriver 0.21.0
+1534534007441	geckodriver	INFO	Listening on 127.0.0.1:58106
+1534534010513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\LEESAN~1\\AppData\\Local\\Temp\\rust_mozprofile.htGMPZkCsQmG"
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\LeeSangHoon\AppData\Local\openvr\openvrpaths.vrpath
+1534534012392	Marionette	INFO	Listening on port 58114
+1534534012645	Marionette	WARN	TLS certificate errors will be ignored for this session
