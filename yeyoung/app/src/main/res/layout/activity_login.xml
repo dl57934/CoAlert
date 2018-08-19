@@ -4,6 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginActivity">
+    android:orientation="vertical"
+    tools:context=".loginActivity"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"/>
+
+    <ImageView
+        android:id="@+id/koalaLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:paddingRight="5dp"
+        app:srcCompat="@drawable/koala"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        app:srcCompat="@drawable/start_logo"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"/>
+
+    <ImageView
+        android:id="@+id/kakaotalkLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        app:srcCompat="@drawable/kakao_account_login_btn_medium_wide"
+        android:clickable="true"/>
 </LinearLayout>
