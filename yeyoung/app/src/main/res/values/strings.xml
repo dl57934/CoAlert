@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">COALERT</string>
+    <string name="title_activity_mypage">mypageActivity</string>
+    <string name="title_search">SEARCH</string>
+    <string name="title_add_review">REVIEW</string>
+    <string name="title_home">HOME</string>
+    <string name="title_bad_elements">BAD ELEMENTS</string>
+    <string name="title_mypage">MYPAGE</string>
+
+
+
 
 </resources>
