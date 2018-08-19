@@ -9,7 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".loginActivity">
+=======
+        <activity
+            android:name=".LoginActivity"
+            android:label="CoAlert" />
+        <activity
+            android:name=".InitialInformationActivity"
+            android:label="@string/title_activity_initial_information"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home">
+
+        </activity>
+        <activity android:name=".reviewActivity">
+>>>>>>> aff698dbed2009c782eb0b35801d851ecbd44de8
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

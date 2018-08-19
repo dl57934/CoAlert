@@ -5,4 +5,8 @@
     <color name="whiteFont">#FFFFFF</color>
     <color name="appBackground">#FAF8F4</color>
     <color name="colorAccent">#FF4081</color>
+<<<<<<< HEAD
+=======
+    <color name="mainColor">#55088A29</color>
+>>>>>>> aff698dbed2009c782eb0b35801d851ecbd44de8
 </resources>
