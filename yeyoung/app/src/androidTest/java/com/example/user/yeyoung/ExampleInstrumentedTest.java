@@ -1,4 +1,4 @@
-package com.example.user.coalert_front;
+package com.example.user.yeyoung;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.user.coalert_front", appContext.getPackageName());
+        assertEquals("com.example.user.yeyoung", appContext.getPackageName());
     }
 }

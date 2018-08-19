@@ -1,4 +1,4 @@
-package com.example.user.coalert_front;
+package com.example.user.yeyoung;
 
 import org.junit.Test;
 
