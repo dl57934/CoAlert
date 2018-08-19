@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#733232</color>
+    <color name="colorPrimaryDark">#FFFFFFFF</color>
     <color name="brightFont">#E6D7B9</color>
     <color name="whiteFont">#FFFFFF</color>
     <color name="appBackground">#FAF8F4</color>
     <color name="colorAccent">#FF4081</color>
-<<<<<<< HEAD
-=======
-    <color name="mainColor">#55088A29</color>
->>>>>>> aff698dbed2009c782eb0b35801d851ecbd44de8
+
+
 </resources>
