@@ -1,4 +1,4 @@
-package com.example.user.yeyoung;
+package com.example.user.yeyoung_front;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

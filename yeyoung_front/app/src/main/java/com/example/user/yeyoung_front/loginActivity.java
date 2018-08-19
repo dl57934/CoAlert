@@ -1,4 +1,4 @@
-package com.example.user.yeyoung;
+package com.example.user.yeyoung_front;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

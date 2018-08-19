@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".loginActivity"
-    android:background="@color/colorPrimary"
+    android:background="@color/mainColor"
     android:weightSum="1">
 
     <Space
@@ -39,11 +39,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.11"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/kakaotalkLogin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="0.08"
+        android:layout_gravity="center"
+        android:background="@color/mainColor"
         app:srcCompat="@drawable/kakao_account_login_btn_medium_wide"
-        android:clickable="true"/>
+        />
 </LinearLayout>
