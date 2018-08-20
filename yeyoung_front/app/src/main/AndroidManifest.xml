@@ -9,20 +9,16 @@
         android:roundIcon="@drawable/koala"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loginActivity">
-
-        </activity>
+        <activity android:name=".loginActivity"></activity>
         <activity android:name=".initialCameraActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter></activity>
+        <activity android:name=".showInitialCameraActivity"></activity>
+        <activity android:name=".mypageActivity">
         </activity>
-        <activity android:name=".showInitialCameraActivity">
-
-        </activity>
-        <activity android:name=".mypageActivity"></activity>
 
     </application>
 

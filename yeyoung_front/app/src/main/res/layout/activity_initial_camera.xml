@@ -46,14 +46,13 @@
         android:layout_marginRight="150dp"
         android:layout_marginTop="100dp"
         android:layout_weight="0.25"
-        android:background="@drawable/camera_button_background"/>
+        android:background="@drawable/camera_button_background" />
 
     <TextView
         android:id="@+id/activate_camera_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-60dp"
-        android:clickable="true"
         android:fontFamily="@font/rix_head_b"
         android:gravity="center"
         android:text="제품명을 찍어주세요."
@@ -63,37 +62,36 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.4" />
+        android:layout_weight="0.45" />
 
- <!--   <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.08"
-        android:clickable="true">
+    <!--   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.08"
+           android:clickable="true">
 
-        <EditText
-            android:id="@+id/search_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
-            android:background="@drawable/search_view_edge"
-            android:ems="13"
-            android:inputType="textPersonName" />
+           <EditText
+               android:id="@+id/search_bar"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="30dp"
+               android:background="@drawable/search_view_edge"
+               android:ems="13"
+               android:inputType="textPersonName" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/search" />
-    </LinearLayout>-->
-<SearchView
-    android:layout_width="350dp"
-    android:layout_height="wrap_content"
-    android:queryHint="검색어를 입력해주세요."
-    android:background="@drawable/search_view_edge"
-    android:layout_gravity="center"
-    >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/search" />
+       </LinearLayout>-->
+    <SearchView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/search_view_edge"
+        android:queryHint="검색어를 입력해주세요.">
 
-</SearchView>
+    </SearchView>
 
 </LinearLayout>

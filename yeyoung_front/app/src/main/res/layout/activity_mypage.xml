@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".mypageActivity">
+    tools:context=".mypageActivity"
+    android:weightSum="1">
 
     <TextView
         android:id="@+id/message"
@@ -15,15 +16,16 @@
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/title_home" />
+        android:text="@string/title_search" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginStart="0dp"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation" />
+        android:background="@color/mainColor"
+        app:menu="@menu/navigation"
+        android:layout_weight="0.1"/>
 
 </LinearLayout>
