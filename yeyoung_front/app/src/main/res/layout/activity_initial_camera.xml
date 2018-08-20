@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.13"
         android:background="@color/mainColor"
         android:fontFamily="@font/rix_head_b"
         android:gravity="center"
@@ -37,22 +37,22 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.2" />
 
-    <ImageView
+    <Button
         android:id="@+id/activate_camera"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="70dp"
         android:layout_marginLeft="140dp"
-        android:layout_marginRight="140dp"
-        android:layout_marginTop="30dp"
-        android:layout_weight="0.3"
-        android:src="@drawable/camera" />
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/camera_button_background"/>
 
     <TextView
         android:id="@+id/activate_camera_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="-60dp"
         android:clickable="true"
         android:fontFamily="@font/rix_head_b"
         android:gravity="center"
