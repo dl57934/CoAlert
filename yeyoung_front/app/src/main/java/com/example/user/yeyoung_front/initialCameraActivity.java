@@ -20,6 +20,7 @@ public class initialCameraActivity extends AppCompatActivity {
                 );
             }
         });*/
+
     }
 
 
