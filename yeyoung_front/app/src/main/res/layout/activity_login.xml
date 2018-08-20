@@ -4,47 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".loginActivity"
     android:background="@color/mainColor"
-    android:weightSum="1">
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".loginActivity">
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.25"/>
+        android:layout_weight="0.25" />
 
     <ImageView
         android:id="@+id/koalaLogo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.25"
-        android:paddingRight="5dp"
-        app:srcCompat="@drawable/koala"
         android:layout_marginBottom="-20dp"
         android:layout_marginLeft="110dp"
         android:layout_marginRight="110dp"
-        />
+        android:layout_weight="0.25"
+        android:paddingRight="5dp"
+        app:srcCompat="@drawable/koala" />
 
     <ImageView
         android:id="@+id/login_logo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.15"
-        app:srcCompat="@drawable/start_logo"
-        />
+        app:srcCompat="@drawable/start_logo" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.11"/>
+        android:layout_weight="0.11" />
 
     <ImageButton
         android:id="@+id/kakaotalkLogin"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="0.08"
         android:layout_gravity="center"
+        android:layout_weight="0.08"
         android:background="@color/mainColor"
         app:srcCompat="@drawable/kakao_account_login_btn_medium_wide"
         />
