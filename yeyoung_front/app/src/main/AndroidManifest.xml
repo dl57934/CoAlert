@@ -16,14 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".initialCameraActivity">
+        <activity android:name=".initialCameraActivity"></activity>
+        <activity android:name=".showInitialCameraActivity">
 
         </activity>
-        <activity
-            android:name=".mypageActivity"
-            android:label="@string/title_activity_mypage">
-
-        </activity>
+        <activity android:name=".mypageActivity"></activity>
 
     </application>
 

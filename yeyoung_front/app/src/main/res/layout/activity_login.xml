@@ -37,13 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.11" />
 
-    <ImageButton
+    <Button
         android:id="@+id/kakaotalkLogin"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="0.08"
-        android:background="@color/mainColor"
-        app:srcCompat="@drawable/kakao_account_login_btn_medium_wide"
+        android:background="@drawable/kakaotalk_login"
         />
 </LinearLayout>
