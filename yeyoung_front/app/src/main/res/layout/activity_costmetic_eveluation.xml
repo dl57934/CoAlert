@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        style="@style/appHeadTitle"
+        android:text="화장품 평가" />
+
+    <ImageView
+        android:id="@+id/prod_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/suncream"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+<!--ratingBar가 안 움직임.. 점수는 나옴-->
+    <RatingBar
+        android:id="@+id/fisrt_eveluation_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:isIndicator="false"
+        android:rating="3"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"
+        android:progressDrawable="@drawable/checked_star_full"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rix_head_b"
+        android:textColor="@color/text"/>
+
+
+
+</LinearLayout>

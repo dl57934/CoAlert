@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        style="@style/appHeadTitle"
+        android:text="화장품 정보 입력"
+        />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:queryHint="검색해주세요."
+        android:background="@drawable/search_view_edge"
+        android:layout_margin="10dp">
+
+    </SearchView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0.05"
+        android:background="@drawable/button_background"
+        android:text="사진으로 검색"
+        style="@style/textStyle"
+        android:textSize="20sp"
+        android:id="@+id/addbtn"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_initial_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:id="@+id/next"
+        style="@style/textStyle"
+        android:textSize="18sp"
+        android:background="@drawable/button_background"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

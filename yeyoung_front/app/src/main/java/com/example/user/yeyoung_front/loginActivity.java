@@ -24,7 +24,7 @@ public class loginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(
                         getApplicationContext(),    //현재 화면의 제어
-                        initialCameraActivity.class);  //다음 넘어갈 클래스 지정
+                        input_skintype_activity.class);  //다음 넘어갈 클래스 지정
                 startActivity(intent);  //다음화면으로 넘어간다.
                 Toast.makeText(getApplicationContext(),"로그인합니다.",Toast.LENGTH_SHORT).show();
             }

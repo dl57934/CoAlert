@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자신의 피부타입 선택"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:fontFamily="@font/bmjua"
+        android:textSize="24sp"
+        android:layout_weight="0.1"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/dry_button"
+        style="@style/inputSkinTypeButtonStyle"
+        android:text="@string/dry_skin"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/oily_button"
+        style="@style/inputSkinTypeButtonStyle"
+        android:text="@string/oily_skin"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/normal_button"
+        style="@style/inputSkinTypeButtonStyle"
+        android:text="@string/normal_skin"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+    <Button
+
+        android:id="@+id/combination_button"
+        style="@style/inputSkinTypeButtonStyle"
+        android:text="@string/combination_skin"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/sensetive_button"
+        style="@style/inputSkinTypeButtonStyle"
+        android:text="@string/sensitive_skin"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"/>
+</LinearLayout>

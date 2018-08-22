@@ -12,4 +12,38 @@
         <item name="colorControlNormal">@color/text</item>
         <item name="android:colorControlActivated">@color/colorAccent</item>
     </style>
+
+    <style name="inputSkinTypeButtonStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.06</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/bmjua</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="appHeadTitle">
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/mainColor</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/bmjua</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:fontFamily">@font/bmjua</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>

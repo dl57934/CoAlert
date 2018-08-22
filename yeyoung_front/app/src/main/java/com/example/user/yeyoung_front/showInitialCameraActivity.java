@@ -18,7 +18,7 @@ public class showInitialCameraActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),
-                        initialCameraActivity.class);
+                        searchPageCameraActivity.class);
                 startActivity(intent);
             }
         });

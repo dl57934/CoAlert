@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/mainColor"
+        android:fontFamily="@font/rix_head_b"
+        android:gravity="center"
+        android:text="리뷰"
+        android:textColor="@color/text"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:fontFamily="@font/rix_head_b"
+        android:textColor="@color/text"
+        android:id="@+id/c_name"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        android:fontFamily="@font/rix_head_b"
+        android:textSize="20dp"
+        android:id="@+id/btn1"
+        android:text="버튼1"
+        android:layout_gravity="end"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        android:fontFamily="@font/rix_head_b"
+        android:textSize="20dp"
+        android:id="@+id/btn2"
+        android:text="버튼2"
+        android:layout_gravity="end"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1" />
+
+
+</LinearLayout>
