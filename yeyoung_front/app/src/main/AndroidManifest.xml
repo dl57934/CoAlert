@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".input_skintype_activity"></activity>
-        <activity android:name=".initialCameraActivity"></activity>
         <activity android:name=".showInitialCameraActivity"></activity>
         <activity android:name=".mypageActivity"></activity>
         <activity android:name=".cosmetic_review" />

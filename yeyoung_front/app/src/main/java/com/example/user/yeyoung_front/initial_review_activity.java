@@ -9,20 +9,30 @@ import android.widget.Button;
 public class initial_review_activity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle saveInstanceState){
+    protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_initial_review);
 
-        Button camera=(Button)findViewById(R.id.next);
-       camera.setOnClickListener(new View.OnClickListener() {
+        Button nextbtn = (Button) findViewById(R.id.next);
+        Button addbtn = (Button) findViewById(R.id.addbtn);
+        addbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(initial_review_activity.this,cpicture_list.class);
+                Intent intent = new Intent(initial_review_activity.this, cpicture_list.class);
+                startActivity(intent);
+            }
+        });
+
+        nextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(initial_review_activity.this, main_screen.class);
                 startActivity(intent);
             }
         });
 
     }
 
-
 }
+
+

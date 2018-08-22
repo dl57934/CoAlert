@@ -1,6 +1,8 @@
 package com.example.user.yeyoung_front;
 
 import android.content.Intent;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,19 +26,21 @@ public class main_screen extends AppCompatActivity {
         //2. AndroidManifest.xml에 Activity를 등록한다.
         //3. Intent 객체를 만들어서 startActivity 한다.
 
-        ImageButton Lbtn = (ImageButton) findViewById(R.id.Leftbtn);
-        ImageButton Rbtn = (ImageButton) findViewById(R.id.Rightbtn);
+        Button Lbtn=(Button)findViewById(R.id.LeftBtn);
+        Button Rbtn=(Button)findViewById(R.id.RightBtn);;
 
 
         img = (ImageButton) findViewById(R.id.imgbtn);
         img.setImageResource(cosmeticID[num]);
-
+        img.setBackground(new ShapeDrawable(new OvalShape()));
+        img.setBackground(getResources().getDrawable(R.drawable.main_circle));
+        img.setClipToOutline(true);
 
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
-                        getApplicationContext(), initialCameraActivity.class);
+                        getApplicationContext(), loginActivity.class);
                 startActivity(intent);  //다음화면으로 넘어간다.
                 //Toast.makeText(getApplicationContext(), "..", Toast.LENGTH_SHORT).show();
             }

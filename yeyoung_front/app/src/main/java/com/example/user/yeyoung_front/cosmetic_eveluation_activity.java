@@ -15,6 +15,17 @@ public class cosmetic_eveluation_activity extends AppCompatActivity {
         setContentView(R.layout.activity_costmetic_eveluation);
         receiveIntentData();
 
+        Button btn=findViewById(R.id.btn);
+        TextView cosmetic_name=findViewById(R.id.c_name);
+        cosmetic_name.setText(name);
+
+        btn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(cosmetic_eveluation_activity.this,initial_review_activity.class);
+                startActivity(intent);
+            }
+
+        });
 
 
     }
