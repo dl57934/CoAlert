@@ -14,23 +14,11 @@
         android:layout_height="0dp"
         android:layout_weight="0.13"
         android:background="@color/mainColor"
-        android:fontFamily="@font/rix_head_b"
+        android:fontFamily="@font/bmjua"
         android:gravity="center"
-        android:text="당신의 화장대를 분석해드립니다."
+        android:text="검색"
         android:textColor="@color/text"
         android:textSize="24sp" />
-
-    <!--
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:background="@drawable/button_background"
-            android:fontFamily="@font/rix_head_b"
-            android:padding="7dp"
-            android:text="리스트 확인"
-            android:textColor="@color/text" />
-    -->
 
     <Space
         android:layout_width="match_parent"
@@ -53,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-60dp"
-        android:fontFamily="@font/rix_head_b"
+        android:fontFamily="@font/bmjua"
         android:gravity="center"
         android:text="제품명을 찍어주세요."
         android:textColor="@color/text"
@@ -64,28 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.45" />
 
-    <!--   <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="0dp"
-           android:layout_weight="0.08"
-           android:clickable="true">
-
-           <EditText
-               android:id="@+id/search_bar"
-               android:layout_width="wrap_content"
-               android:layout_height="match_parent"
-               android:layout_marginLeft="30dp"
-               android:background="@drawable/search_view_edge"
-               android:ems="13"
-               android:inputType="textPersonName" />
-
-           <ImageView
-               android:layout_width="wrap_content"
-               android:layout_height="match_parent"
-               android:layout_marginLeft="10dp"
-               android:src="@drawable/search" />
-       </LinearLayout>-->
     <SearchView
+        android:id="@+id/search_view"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

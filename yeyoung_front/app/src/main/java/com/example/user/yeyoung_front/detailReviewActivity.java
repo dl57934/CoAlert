@@ -43,11 +43,11 @@ public class detailReviewActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View v) {
         //첫 번째로 사진가져오기를 클릭하면 또 다른 레이아웃 것을 다이어로그로 출력해서 선택하게끔 하자
-        if(v.getId()==R.id.add_picture1){
+        if(v.getId()== R.id.add_picture1){
             //다이어로그를 먼저 만들어낸다.
             AlertDialog.Builder builder=new AlertDialog.Builder(this);
             //이곳에 만드는 다이어로그의 layout을 정한다.
-            View customLayout=View.inflate(this,R.layout.custom_button,null);
+           // View customLayout=View.inflate(this,R.layout.custom_button,null);
         }
     }
 }
