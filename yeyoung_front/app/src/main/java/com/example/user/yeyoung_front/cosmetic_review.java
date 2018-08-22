@@ -16,24 +16,10 @@ public class cosmetic_review extends AppCompatActivity {
         setContentView(R.layout.cosmetic_review);
         receiveIntentData();
 
-        Button btn1=(Button)findViewById(R.id.btn1);
-        Button btn2=(Button)findViewById(R.id.btn2);
-        TextView tv1=(TextView)findViewById(R.id.c_name);
+
+        TextView tv1=(TextView)findViewById(R.id.evaluation_product_name);
         tv1.setText(name);
-        btn1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                Intent intent = new Intent(cosmetic_review.this,product_list.class);
-                startActivity(intent);
-            }
 
-        });
-        btn2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                Intent intent = new Intent(cosmetic_review.this,main_screen.class);
-                startActivity(intent);
-            }
-
-        });
 
     }
 

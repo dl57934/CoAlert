@@ -2,63 +2,175 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
         android:background="@color/mainColor"
-        android:fontFamily="@font/rix_head_b"
-        android:gravity="center"
-        android:text="리뷰"
-        android:textColor="@color/text"
-        android:textSize="24sp" />
+        android:orientation="horizontal">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.3" />
+        <Button
+            android:id="@+id/cosmetic_review_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_button_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:fontFamily="@font/rix_head_b"
+            android:paddingLeft="125dp"
+            android:text="리뷰"
+            android:textColor="@color/text"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cosmetic_review_product_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:src="@drawable/suncream" />
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:fontFamily="@font/rix_head_b"
-        android:textColor="@color/text"
-        android:id="@+id/c_name"
-        android:layout_gravity="center_horizontal"/>
-
-
-    <Space
+        android:id="@+id/evaluation_product_name"
+        style="@style/textStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.4" />
+        android:layout_weight="0.05"
+        android:gravity="center"
+        android:text="@string/product_name"
+        android:textSize="18sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/mainColor"
-        android:fontFamily="@font/rix_head_b"
-        android:textSize="20dp"
-        android:id="@+id/btn1"
-        android:text="버튼1"
-        android:layout_gravity="end"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/mainColor"
-        android:fontFamily="@font/rix_head_b"
-        android:textSize="20dp"
-        android:id="@+id/btn2"
-        android:text="버튼2"
-        android:layout_gravity="end"/>
-
-    <Space
+    <TextView
+        android:id="@+id/evaluation_company_name"
+        style="@style/textStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1" />
+        android:layout_weight="0.02"
+        android:gravity="center"
+        android:text="@string/company_name"
+        android:textSize="14sp" />
 
+    <!--ratingBar가 안 움직임.. 점수는 나옴-->
+    <RatingBar
+        android:id="@+id/fisrt_eveluation_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:layout_weight="0.1"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressDrawable="@drawable/checked_star_full"
+        android:rating="3"
+        android:stepSize="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23" />
+
+        <Button
+            android:id="@+id/evaluation_allergy"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:background="@drawable/button_background"
+            android:text="@string/allergy"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:id="@+id/evaluation_troubles"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:background="@drawable/button_background"
+            android:text="@string/trouble"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:id="@+id/evaluation_others"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:background="@drawable/button_background"
+            android:text="@string/other_troubles"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/cosmetic_review_simple_review"
+        style="@style/textStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_weight="0.05"
+        android:hint="한줄평을 남겨주세요."
+        android:textColorHint="@color/text"
+        android:textCursorDrawable="@color/text"
+        android:theme="@style/EditTextStyle.tTextStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/detail_review"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/evaluation_confirmed_button"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="확인"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 </LinearLayout>
