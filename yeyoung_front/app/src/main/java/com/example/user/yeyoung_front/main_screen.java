@@ -36,15 +36,7 @@ public class main_screen extends AppCompatActivity {
         img.setBackground(getResources().getDrawable(R.drawable.main_circle));
         img.setClipToOutline(true);
 
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        getApplicationContext(), loginActivity.class);
-                startActivity(intent);  //다음화면으로 넘어간다.
-                //Toast.makeText(getApplicationContext(), "..", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         Lbtn.setOnClickListener(new View.OnClickListener() {
             @Override

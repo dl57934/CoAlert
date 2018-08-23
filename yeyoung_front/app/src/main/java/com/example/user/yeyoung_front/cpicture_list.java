@@ -59,11 +59,11 @@ public class cpicture_list extends AppCompatActivity {
 
         List<Recycler_item> items=new ArrayList<>();
         Recycler_item[] item=new Recycler_item[5];
-        item[0]=new Recycler_item(R.drawable.sun1,"듬뿍듬뿍 썬크림", "80%");
-        item[1]=new Recycler_item(R.drawable.suncream,"쫀득쫀득 썬크림","90%");
-        item[2]=new Recycler_item(R.drawable.suncream2,"말랑말랑 썬크림","50%");
-        item[3]=new Recycler_item(R.drawable.suncream3,"듬뿍듬뿍 썬크림","80%");
-        item[4]=new Recycler_item(R.drawable.suncream4,"듬뿍듬뿍 썬크림","80%");
+        item[0]=new Recycler_item(R.drawable.suncream_default,"MEDI UV ULTRA");
+        item[1]=new Recycler_item(R.drawable.suncream,"ULTRA LIGHT DAILY UV DEFENSE SUNCSCREAN");
+        item[2]=new Recycler_item(R.drawable.suncream2,"TREATMENT ESSENCE ULTRA SUNBLOCK");
+        item[3]=new Recycler_item(R.drawable.suncream3,"ULTRA HIGH SUNBLOCK");
+        item[4]=new Recycler_item(R.drawable.suncream4,"ULTRA LIGHT SUNBLOCK");
 
         for(int i=0;i<5;i++) items.add(item[i]);
 

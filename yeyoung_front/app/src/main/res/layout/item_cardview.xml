@@ -41,16 +41,17 @@
                     android:layout_height="match_parent"
                     android:gravity="left"
                     android:text="화장품 이름 : "
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:fontFamily="@font/rix_head_b"/>
 
                 <TextView
                     android:id="@+id/title"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@+id/name"
                     android:text="ddd"
-                    android:textSize="15dp"
+                    android:textSize="20dp"
                     android:fontFamily="@font/rix_head_b" />
 
                 <LinearLayout
@@ -58,21 +59,6 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
                     android:layout_marginTop="50dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="bottom"
-                        android:text="매칭확률 : "
-                        android:fontFamily="@font/rix_head_b"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="bottom"
-                        android:text="80%"
-                        android:fontFamily="@font/rix_head_b"
-                        android:id="@+id/percent"/>
 
                 </LinearLayout>
 

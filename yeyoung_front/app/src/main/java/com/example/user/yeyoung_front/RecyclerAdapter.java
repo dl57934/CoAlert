@@ -39,7 +39,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         Drawable drawable=context.getResources().getDrawable(item.getImage());
         holder.image.setBackground(drawable);
         holder.title.setText(item.getTitle());
-        holder.percent.setText(item.getPercent());
         holder.cardview.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(context,item.getTitle(), Toast.LENGTH_SHORT).show();
@@ -59,14 +58,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         ImageView image;
         TextView title;
         CardView cardview;
-        TextView percent;
 
         public ViewHolder(View itemView) {
             super(itemView);
             image = (ImageView) itemView.findViewById(R.id.image);
             title = (TextView) itemView.findViewById(R.id.title);
             cardview = (CardView) itemView.findViewById(R.id.cardview);
-            percent = (TextView) itemView.findViewById(R.id.percent);
 
         }
     }
