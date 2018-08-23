@@ -35,10 +35,9 @@
         <activity android:name=".cosmetic_review" />
         <activity android:name=".product_list" />
         <activity android:name=".cpicture_list" />
-        <activity android:name=".main_screen" />
         <activity android:name=".harm_list" />
         <activity android:name=".cosmetic_evaluation_activity"/>
-
+        <activity android:name=".mainScreenActivity"/>
     </application>
 
 </manifest>

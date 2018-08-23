@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class loginActivity extends AppCompatActivity {
-
+    static int number = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +30,12 @@ public class loginActivity extends AppCompatActivity {
                         getApplicationContext(),    //현재 화면의 제어
                         input_skintype_activity.class);  //다음 넘어갈 클래스 지정
                 startActivity(intent);  //다음화면으로 넘어간다.
+                finish();
                 Toast.makeText(getApplicationContext(),"로그인합니다.",Toast.LENGTH_SHORT).show();
             }
         });
+        discharge num = new discharge();
+        num.setGlobalString(0);
     }
     void permissonCheck() {
         int ReadStoragetPermmission = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE);

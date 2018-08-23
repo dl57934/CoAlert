@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
@@ -19,11 +20,11 @@ public class cosmetic_evaluation_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_costmetic_evaluation);
         receiveIntentData();
-
+        loginActivity.number += 1;
         Button btn = findViewById(R.id.evaluation_confirmed_button);
         TextView cosmetic_name = findViewById(R.id.evaluation_product_name);
         cosmetic_name.setText(name);
-
+        Log.e("discharge: ", String.valueOf(loginActivity.number));
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(cosmetic_evaluation_activity.this, initialReviewActivity.class);

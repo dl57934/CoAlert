@@ -18,6 +18,7 @@ public class input_skintype_activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(input_skintype_activity.this,initialReviewActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
         }

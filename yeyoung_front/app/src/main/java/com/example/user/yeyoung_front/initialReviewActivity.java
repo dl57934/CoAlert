@@ -50,7 +50,7 @@ public class initialReviewActivity extends AppCompatActivity {
         nextbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(initialReviewActivity.this, main_screen.class);
+                Intent intent = new Intent(initialReviewActivity.this, mainScreenActivity.class);
                 startActivity(intent);
             }
         });
@@ -58,15 +58,16 @@ public class initialReviewActivity extends AppCompatActivity {
         density = getResources().getDisplayMetrics().density;
         dpHeight = (int) (outMetrics.heightPixels/*density*/);
         dpWidth = (int) (outMetrics.widthPixels/*density*/);
-
+        String name[] = new String[]{"Dr.G MEDI UV ULTRA SUN", "YEBLANG Special SESITIVE SUN CREAM"};
+        String score[] = new String[]{"2", "3"};
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview_initial_review);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         custAdapter = new CustAdapter();
         recyclerView.setAdapter(custAdapter);
-        prod_name.add("나는");
-        prod_score.add("3");
-        for (int i = 0; i < 1; i++) {
-            custAdapter.add(new CustContainer(prod_name.get(i), prod_score.get(i)));
+
+        for (int i = 0; i < loginActivity.number; i++) {
+            Log.e("asdasd: ", String.valueOf(prod_name.size()));
+            custAdapter.add(new CustContainer(name[i], score[i]));
         }
 //        custAdapter.notifyDataSetChanged();
     }
@@ -83,8 +84,11 @@ public class initialReviewActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
                     if (requestCode == cameraRequest && resultCode == Activity.RESULT_OK){
+                discharge num = new discharge();
+
                 Intent intent = new Intent(this, cpicture_list.class);
                 intent.putExtra("image", allUri);
+                intent.putExtra("number", num.getGlobalString());
                 startActivity(intent);
 
         }

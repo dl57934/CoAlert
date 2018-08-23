@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="15" />
+              <selected id="16" />
             </state>
           </provider>
         </entry>
@@ -126,7 +126,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>content</find>
-      <find />
+      <find>이거 바르고 여드름</find>
       <find>메디</find>
     </findStrings>
   </component>
@@ -168,7 +168,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -607,7 +607,7 @@
     <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="15" />
+          <selected id="16" />
         </state>
       </provider>
     </entry>

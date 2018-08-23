@@ -1,123 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:id="@+id/navigation_container">
+    >
 
-    <TextView
-        android:id="@+id/textView"
+    <android.support.design.internal.ScrimInsetsFrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.13"
-        android:background="@color/appBackground"
-        android:fontFamily="@font/rix_head_b"
-        android:gravity="center"
-        android:text="COALERT"
-        android:textColor="@color/text"
-        android:textSize="24sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/navigation_container"
+        android:layout_weight="0.9">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="0dp"
-       android:layout_weight="0.35"
-       android:background="@color/colorPrimary"
-       android:orientation="vertical"
-       android:gravity="center"
-       >
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Your have a weakness at"
-           android:gravity="center"
-           android:textSize="20dp"
-           android:fontFamily="@font/bmjua"
-           android:textColor="#ffffff"/>
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="something"
-           android:gravity="center"
-           android:textSize="25dp"
-           android:fontFamily="@font/rix_head_b"
-           android:textStyle="bold"
-           android:textColor="#ffffff"/>
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="ingredient"
-           android:gravity="center"
-           android:textSize="20dp"
-           android:fontFamily="@font/bmjua"
-           android:textColor="#ffffff"/>
-
-   </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.13"
+                android:background="@color/appBackground"
+                android:fontFamily="@font/rix_head_b"
+                android:gravity="center"
+                android:text="COALERT"
+                android:textColor="@color/text"
+                android:textSize="24sp" />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="cosmetic aaaa"
-            android:textSize="20dp"
-            android:fontFamily="@font/bmjua"
-            android:textColor="@color/text"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical">
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:text="Your have a weakness at"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.15" />
+                <TextView
+                    android:id="@+id/bad_element"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rix_head_b"
+                    android:gravity="center"
+                    android:text="something"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bmjua"
+                    android:gravity="center"
+                    android:text="ingredient"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/left"
-            android:id="@+id/LeftBtn"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="10dp"
-            android:layout_centerVertical="true"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="center">
 
 
-        <ImageButton
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:scaleType="centerInside"
-            android:layout_gravity="center"
-            android:background="#ffffff"
-            android:id="@+id/imgbtn"
-            android:padding="25dp"
-            android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bmjua"
+                    android:text="cosmetic aaaa"
+                    android:id="@+id/text"
+                    android:textColor="@color/text"
+                    android:textSize="20dp" />
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/left"
-            android:id="@+id/RightBtn"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
-            android:layout_centerVertical="true"
-            android:rotation="180"/>
+            </LinearLayout>
 
-    </RelativeLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <Button
+                    android:id="@+id/LeftBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/left" />
+
+
+                <ImageButton
+                    android:id="@+id/imgbtn"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:padding="25dp"
+                    android:scaleType="centerInside" />
+
+                <Button
+                    android:id="@+id/RightBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/left"
+                    android:rotation="180" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15" />
+        </LinearLayout>
+
+    </android.support.design.internal.ScrimInsetsFrameLayout>
+
 
 
     <android.support.design.widget.BottomNavigationView
