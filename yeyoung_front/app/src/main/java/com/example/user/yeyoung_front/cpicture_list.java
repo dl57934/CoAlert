@@ -33,8 +33,6 @@ public class cpicture_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cpicture_list);
         Intent intent = getIntent();
-        discharge dischargeNum = new discharge();
-
         Uri uri = intent.getParcelableExtra("image");
         try {
             image = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
@@ -63,17 +61,17 @@ public class cpicture_list extends AppCompatActivity {
         List<Recycler_item> items=new ArrayList<>();
         Recycler_item[] item=new Recycler_item[5];
         if (loginActivity.number ==0) {
-            item[0] = new Recycler_item(R.drawable.suncream_default, "MEDI UV ULTRA");
-            item[1] = new Recycler_item(R.drawable.similiar_cosmetic0_0, "ULTRA LIGHT DAILY UV DEFENSE SUNCSCREAN");
-            item[2] = new Recycler_item(R.drawable.similiar_cosmetic0_1, "TREATMENT ESSENCE ULTRA SUNBLOCK");
-            item[3] = new Recycler_item(R.drawable.similiar_cosmetic0_2, "ULTRA HIGH SUNBLOCK");
-            item[4] = new Recycler_item(R.drawable.similiar_cosmetic0_3, "ULTRA LIGHT SUNBLOCK");
+            item[0] = new Recycler_item(R.drawable.suncream_default, "메디 UV 울트라 선");
+            item[1] = new Recycler_item(R.drawable.similiar_cosmetic0_0, "울트라 라이트 데일리 UV 디펜스 선크림");
+            item[2] = new Recycler_item(R.drawable.similiar_cosmetic0_1, "트리트먼트 에센스 울트라 선블락");
+            item[3] = new Recycler_item(R.drawable.similiar_cosmetic0_2, "울트라 하이 선블락");
+            item[4] = new Recycler_item(R.drawable.similiar_cosmetic0_3, "울트라 라이트 선블락");
         }else if (loginActivity.number == 1){
-            item[0] = new Recycler_item(R.drawable.similiar_cosmetic1_3, "YEBLANG SENSITIVE SUNCREAM");
-            item[1] = new Recycler_item(R.drawable.similiar_cosmetic1_0, "SENSITIVE SUNCREAM");
-            item[2] = new Recycler_item(R.drawable.similiar_cosmetic1_1, "Pure SENSITIVE SUNCREAM");
-            item[3] = new Recycler_item(R.drawable.similiar_cosmetic1_2, "SENSITIVE SUNCREAM");
-            item[4] = new Recycler_item(R.drawable.similiar_cosmetic1_3, "NATURE SENSITIVE SUNCREAM");
+            item[0] = new Recycler_item(R.drawable.similiar_cosmetic1_3, "예브랑 센서티브 선크림");
+            item[1] = new Recycler_item(R.drawable.similiar_cosmetic1_0, "센서티브 선크림");
+            item[2] = new Recycler_item(R.drawable.similiar_cosmetic1_1, "퓨어 센서티브 선크림");
+            item[3] = new Recycler_item(R.drawable.similiar_cosmetic1_2, "센서티브 선크림");
+            item[4] = new Recycler_item(R.drawable.similiar_cosmetic1_3, "내추럴 센서티브 선크림");
         }
         for(int i=0;i<5;i++) items.add(item[i]);
 

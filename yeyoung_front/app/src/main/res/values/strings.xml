@@ -33,4 +33,6 @@
     <string name="user_name">Koala</string>
     <string name="element_suitability">100</string>
     <string name="다음" />
+    <string name="initial_word_progressing">초기 설정 단계입니다.\n 데이터를 수집합니다...</string>
+    <string name="precious_words">불확실한 믿음보다는\n 명료한 지식이 낫다.\n\n 너의 피부를 디자인하라.</string>
 </resources>

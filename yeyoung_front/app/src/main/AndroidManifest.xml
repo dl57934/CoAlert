@@ -38,6 +38,7 @@
         <activity android:name=".harm_list" />
         <activity android:name=".cosmetic_evaluation_activity"/>
         <activity android:name=".mainScreenActivity"/>
+        <activity android:name=".initial_setting_word"/>
     </application>
 
 </manifest>

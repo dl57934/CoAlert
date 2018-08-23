@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:onClick="input_skinType">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:src="@drawable/koala"
+       android:layout_weight="0.6"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/precious_words"
+        android:fontFamily="@font/bmjua"
+        android:textColor="#485e6c"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_word_progressing"
+        android:gravity="center"
+        style="@style/textStyle"
+        android:textSize="20sp"/>
+<!--
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="70dp"
+        android:gravity="center"
+        android:text="@string/initial_word_progressing"
+        android:textSize="30sp" />-->
+</LinearLayout>

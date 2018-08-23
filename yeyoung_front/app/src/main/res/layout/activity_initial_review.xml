@@ -43,7 +43,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/다음"
+        android:text="다음"
         android:id="@+id/next"
         style="@style/textStyle"
         android:textSize="18sp"

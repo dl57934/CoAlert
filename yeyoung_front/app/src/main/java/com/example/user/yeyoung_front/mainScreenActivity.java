@@ -95,8 +95,10 @@ public class mainScreenActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.navigation_container,selectedFragment).commit();
                     break;
                 case R.id.navigation_add_review:
-                    Intent intent = new Intent(mainScreenActivity.this, initialReviewActivity.class);
+                    Intent intent = new Intent(mainScreenActivity.this,cosmetic_review.class);
                     startActivity(intent);
+
+                    finish();
                     break;
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
