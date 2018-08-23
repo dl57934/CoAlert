@@ -1,7 +1,11 @@
 package com.example.user.yeyoung_front;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +21,7 @@ public class loginActivity extends AppCompatActivity {
         //1. 다음 넘어갈 화면을 준비한다 (layout xml, java)
         //2. AndroidManifest.xml에 Activity를 등록한다.
         //3. Intent 객체를 만들어서 startActivity 한다.
-
+        permissonCheck();
         Button kakaoLogin=(Button)findViewById(R.id.kakaotalkLogin);
         kakaoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +34,21 @@ public class loginActivity extends AppCompatActivity {
             }
         });
     }
+    void permissonCheck() {
+        int ReadStoragetPermmission = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE);
+        int ReadAudioPermmission = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO);
+        int WriteStorage = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (ReadAudioPermmission != PackageManager.PERMISSION_GRANTED && ReadStoragetPermmission != PackageManager.PERMISSION_GRANTED &&
+                WriteStorage != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_EXTERNAL_STORAGE)) {
 
+            } else {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                        1000);
+            }
+        }
+    }
 
 
 }

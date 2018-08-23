@@ -1,10 +1,15 @@
 package com.example.user.yeyoung_front;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.constraint.ConstraintSet;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,9 +21,11 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class initialReviewActivity extends AppCompatActivity {
@@ -26,8 +33,11 @@ public class initialReviewActivity extends AppCompatActivity {
     ArrayList<String> prod_score = new ArrayList<>();
     static float density;
     static int dpHeight, dpWidth;
-RecyclerView recyclerView;
-CustAdapter custAdapter;
+    RecyclerView recyclerView;
+    CustAdapter custAdapter;
+    Button nextbtn;
+    Uri allUri;
+    int cameraRequest=10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +46,14 @@ CustAdapter custAdapter;
         Display display = getWindowManager().getDefaultDisplay();
         DisplayMetrics outMetrics = new DisplayMetrics();
         display.getMetrics(outMetrics);
+        nextbtn = (Button) findViewById(R.id.next);
+        nextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(initialReviewActivity.this, main_screen.class);
+                startActivity(intent);
+            }
+        });
 
         density = getResources().getDisplayMetrics().density;
         dpHeight = (int) (outMetrics.heightPixels/*density*/);
@@ -47,12 +65,30 @@ CustAdapter custAdapter;
         recyclerView.setAdapter(custAdapter);
         prod_name.add("나는");
         prod_score.add("3");
-        for (int i = 0; i<1;i++ ) {
+        for (int i = 0; i < 1; i++) {
             custAdapter.add(new CustContainer(prod_name.get(i), prod_score.get(i)));
         }
 //        custAdapter.notifyDataSetChanged();
     }
+    public void cameraView(View v){
+        Uri uri = FileProvider.getUriForFile(this, "com.bignerdranch.android.test.fileprovider",new File(Environment.getExternalStorageDirectory(), "tmp_contact_" + System.currentTimeMillis() + ".jpg"));
+        allUri = uri;
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intent.putExtra(android.provider.MediaStore.EXTRA_OUTPUT, uri);
+        startActivityForResult(intent, cameraRequest);
+    }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+                    if (requestCode == cameraRequest && resultCode == Activity.RESULT_OK){
+                Intent intent = new Intent(this, cpicture_list.class);
+                intent.putExtra("image", allUri);
+                startActivity(intent);
+
+        }
+    }
 }
 
 class CustHolder extends RecyclerView.ViewHolder {
@@ -70,42 +106,41 @@ class CustHolder extends RecyclerView.ViewHolder {
         content.setLayoutParams(param);
 
         itemView.setOnTouchListener(new View.OnTouchListener() {
-            float x1=0f;
-            float x2=0f;
+            float x1 = 0f;
+            float x2 = 0f;
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                switch(event.getAction()){
+                switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        x1=event.getX();
-                        Log.d("Listener","...");
+                        x1 = event.getX();
+                        Log.d("Listener", "...");
                         break;
                     case MotionEvent.ACTION_UP:
-                        x2=event.getX();
-                        float deltaX=x2-x1;
-                        Log.d("Event","Happy"+deltaX);
-                        TransitionManager.beginDelayedTransition((ViewGroup)v);
-                        if(Math.abs(deltaX)>25){
+                        x2 = event.getX();
+                        float deltaX = x2 - x1;
+                        Log.d("Event", "Happy" + deltaX);
+                        TransitionManager.beginDelayedTransition((ViewGroup) v);
+                        if (Math.abs(deltaX) > 25) {
                             //Left to Right swipe action
-                            if(deltaX>0){
-                                ConstraintSet constraintSet=new ConstraintSet();
-                                constraintSet.clone((ConstraintLayout)itemView);
-                                constraintSet.connect(R.id.one_card_layout,ConstraintSet.START, R.id.activity_cardview_test_layout,ConstraintSet.START,0);
-                                constraintSet.clear(R.id.one_card_layout,ConstraintSet.END);
-                                constraintSet.applyTo((ConstraintLayout)itemView);
-                                Log.d("dd","left to right ");
+                            if (deltaX > 0) {
+                                ConstraintSet constraintSet = new ConstraintSet();
+                                constraintSet.clone((ConstraintLayout) itemView);
+                                constraintSet.connect(R.id.one_card_layout, ConstraintSet.START, R.id.activity_cardview_test_layout, ConstraintSet.START, 0);
+                                constraintSet.clear(R.id.one_card_layout, ConstraintSet.END);
+                                constraintSet.applyTo((ConstraintLayout) itemView);
+                                Log.d("dd", "left to right ");
                             }
                             //Right to left swipe action
-                            else{
-                                ConstraintSet constraintSet=new ConstraintSet();
-                                constraintSet.clone((ConstraintLayout)itemView);
-                                constraintSet.connect(R.id.one_card_layout,ConstraintSet.END, R.id.activity_cardview_test_layout,ConstraintSet.END,0);
-                                constraintSet.clear(R.id.one_card_layout,ConstraintSet.START);
-                                constraintSet.applyTo((ConstraintLayout)itemView);
-                                Log.d("ss","right to left");
+                            else {
+                                ConstraintSet constraintSet = new ConstraintSet();
+                                constraintSet.clone((ConstraintLayout) itemView);
+                                constraintSet.connect(R.id.one_card_layout, ConstraintSet.END, R.id.activity_cardview_test_layout, ConstraintSet.END, 0);
+                                constraintSet.clear(R.id.one_card_layout, ConstraintSet.START);
+                                constraintSet.applyTo((ConstraintLayout) itemView);
+                                Log.d("ss", "right to left");
                             }
-                        }
-                        else {
+                        } else {
                             //consider as something else - a screen tap fo example
                         }
                         break;

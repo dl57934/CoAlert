@@ -47,7 +47,7 @@
         android:layout_weight="0.05"
         android:gravity="center"
         android:text="@string/product_name"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/evaluation_company_name"
@@ -57,7 +57,8 @@
         android:layout_weight="0.02"
         android:gravity="center"
         android:text="@string/company_name"
-        android:textSize="14sp" />
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
 
     <!--ratingBar가 안 움직임.. 점수는 나옴-->
     <RatingBar
@@ -69,7 +70,7 @@
         android:layout_weight="0.1"
         android:isIndicator="false"
         android:numStars="5"
-        android:progressDrawable="@drawable/checked_star_full"
+        android:progressDrawable="@drawable/special_rating_bar_full"
         android:rating="3"
         android:stepSize="1" />
 

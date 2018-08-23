@@ -24,7 +24,8 @@
     <Button
         android:id="@+id/dry_button"
         style="@style/inputSkinTypeButtonStyle"
-        android:text="@string/dry_skin"/>
+        android:text="@string/dry_skin"
+        />
 
     <Space
         android:layout_width="match_parent"

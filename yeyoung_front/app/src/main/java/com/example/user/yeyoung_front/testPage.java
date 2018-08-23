@@ -10,7 +10,7 @@ RatingBar rb;
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.activity_costmetic_eveluation);
+        setContentView(R.layout.activity_costmetic_evaluation);
 
         rb=(RatingBar)findViewById(R.id.fisrt_eveluation_ratingbar);
 

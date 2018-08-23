@@ -43,7 +43,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         holder.cardview.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(context,item.getTitle(), Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(context,cosmetic_eveluation_activity.class);
+                Intent intent = new Intent(context,cosmetic_evaluation_activity.class);
                 intent.putExtra("name",item.getTitle());
                 context.startActivity(intent);
             }
