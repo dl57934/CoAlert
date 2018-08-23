@@ -12,7 +12,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/sh_System$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1534534006627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler/img/0" />
     <SUITE FILE_PATH="coverage/sh_System$useModel.coverage" NAME="useModel Coverage Results" MODIFIED="1534404555593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CosmeticsRecommaned" />
-    <SUITE FILE_PATH="coverage/sh_System$sh_System.coverage" NAME="sh_System Coverage Results" MODIFIED="1535042552235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/sh_System$sh_System.coverage" NAME="sh_System Coverage Results" MODIFIED="1535061213276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/sh_System$renameImg.coverage" NAME="renameImg Coverage Results" MODIFIED="1534526762808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler/img" />
     <SUITE FILE_PATH="coverage/sh_System$1.coverage" NAME="1 Coverage Results" MODIFIED="1534322914423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
     <SUITE FILE_PATH="coverage/sh_System$RotationImg__3_.coverage" NAME="RotationImg (3) Coverage Results" MODIFIED="1534535996699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler/img/4" />
@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="16" />
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -79,7 +79,7 @@
       <file leaf-file-name="top.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/top.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4969">
+            <state relative-caret-position="25">
               <caret line="2080" column="6" selection-start-line="2080" selection-start-column="4" selection-end-line="2080" selection-end-column="6" />
             </state>
           </provider>
@@ -177,35 +177,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sh_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sh_System" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sh_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sh_System" type="462c0819:PsiDirectoryNode" />
-              <item name="CosmeticsRecommaned" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sh_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sh_System" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sh_System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sh_System" type="462c0819:PsiDirectoryNode" />
-              <item name="movieRecommaned" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -391,7 +363,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798658" weight="0.3645533" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798658" visible="true" weight="0.36324787" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" weight="0.32905984" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.73231626" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -575,20 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/splitCsvFile.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/top.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4969">
-          <caret line="2080" column="6" selection-start-line="2080" selection-start-column="4" selection-end-line="2080" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/divisionIngredient.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -604,10 +562,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/top.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="2080" column="6" selection-start-line="2080" selection-start-column="4" selection-end-line="2080" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/splitCsvFile.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CosmeticsRecommaned/Recommaned.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="16" />
+          <selected id="0" />
         </state>
       </provider>
     </entry>

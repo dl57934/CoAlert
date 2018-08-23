@@ -13,6 +13,7 @@
         android:id="@+id/navigation_container"
         android:layout_weight="0.9">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -43,8 +44,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bmjua"
                     android:gravity="center"
-                    android:text="Your have a weakness at"
-                    android:textColor="#ffffff"
+                    android:text="당신의 유해성분은"
+                    android:textColor="@color/text"
                     android:textSize="20dp" />
 
                 <TextView
@@ -54,7 +55,7 @@
                     android:fontFamily="@font/rix_head_b"
                     android:gravity="center"
                     android:text="something"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/text"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
@@ -63,8 +64,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bmjua"
                     android:gravity="center"
-                    android:text="ingredient"
-                    android:textColor="#ffffff"
+                    android:text="입니다."
+                    android:textColor="@color/text"
                     android:textSize="20dp" />
 
             </LinearLayout>
@@ -85,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bmjua"
-                    android:text="cosmetic aaaa"
+                    android:text="추천 화장품"
                     android:id="@+id/text"
                     android:textColor="@color/text"
                     android:textSize="20dp" />
@@ -133,10 +134,24 @@
 
             </RelativeLayout>
 
-            <Space
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.15" />
+                android:layout_height="0dp"
+                android:layout_weight="0.15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nametext"
+                    android:layout_marginTop="5dp"
+                    style="@style/textStyle"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
     </android.support.design.internal.ScrimInsetsFrameLayout>

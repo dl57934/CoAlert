@@ -66,10 +66,10 @@ public class initialReviewActivity extends AppCompatActivity {
         custAdapter = new CustAdapter();
         recyclerView.setAdapter(custAdapter);
 
-        for (int i = 0; i < loginActivity.number; i++) {
-            Log.e("asdasd: ", String.valueOf(prod_name.size()));
-            custAdapter.add(new CustContainer(name[i], score[i]));
-        }
+//        for (int i = 0; i < loginActivity.number; i++) {
+//            Log.e("asdasd: ", String.valueOf(prod_name.size()));
+//            custAdapter.add(new CustContainer(name[i], score[i]));
+//        }
 //        custAdapter.notifyDataSetChanged();
     }
     public void cameraView(View v){
