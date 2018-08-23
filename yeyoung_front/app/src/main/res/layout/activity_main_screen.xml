@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:background="@color/appBackground"
+        android:fontFamily="@font/rix_head_b"
+        android:gravity="center"
+        android:text="COALERT"
+        android:textColor="@color/text"
+        android:textSize="24sp" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.35"
+       android:background="@color/colorPrimary"
+       android:orientation="vertical"
+       android:gravity="center"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Your have a weakness at"
+           android:gravity="center"
+           android:textSize="20dp"
+           android:fontFamily="@font/bmjua"
+           android:textColor="#ffffff"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="something"
+           android:gravity="center"
+           android:textSize="25dp"
+           android:fontFamily="@font/rix_head_b"
+           android:textStyle="bold"
+           android:textColor="#ffffff"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="ingredient"
+           android:gravity="center"
+           android:textSize="20dp"
+           android:fontFamily="@font/bmjua"
+           android:textColor="#ffffff"/>
+
+   </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cosmetic aaaa"
+            android:textSize="20dp"
+            android:fontFamily="@font/bmjua"
+            android:textColor="@color/text"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/left"
+            android:id="@+id/LeftBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:id="@+id/imgbtn"
+            android:padding="25dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/left"
+            android:id="@+id/RightBtn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:rotation="180"/>
+
+    </RelativeLayout>
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4" />
+
+
+</LinearLayout>
