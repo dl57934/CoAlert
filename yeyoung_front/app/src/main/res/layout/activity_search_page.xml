@@ -34,8 +34,7 @@
         android:layout_marginRight="150dp"
         android:layout_marginTop="100dp"
         android:layout_weight="0.25"
-        android:background="@drawable/camera_button_background"
-        android:onClick="cameraView"/>
+        android:background="@drawable/camera_button_background" />
 
     <TextView
         android:id="@+id/activate_camera_text"

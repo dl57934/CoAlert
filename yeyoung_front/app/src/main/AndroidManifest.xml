@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.yeyoung_front">
-    <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/koala"
@@ -13,28 +10,21 @@
         android:roundIcon="@drawable/koala"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.bignerdranch.android.test.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-        <meta-data
-            android:name="android.support.FILE_PROVIDER_PATHS"
-            android:resource="@xml/filepaths" /></provider>
         <activity android:name=".loginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".input_skintype_activity" />
-        <activity android:name=".initialReviewActivity" />
-        <activity android:name=".mainScreenActivity" />
+        <activity android:name=".input_skintype_activity"></activity>
+        <activity android:name=".showInitialCameraActivity"></activity>
+        <activity android:name=".mypageActivity"></activity>
         <activity android:name=".cosmetic_review" />
         <activity android:name=".product_list" />
         <activity android:name=".cpicture_list" />
         <activity android:name=".main_screen" />
         <activity android:name=".harm_list" />
+        <activity android:name=".initial_review_activity"/>
         <activity android:name=".cosmetic_eveluation_activity"/>
 
     </application>

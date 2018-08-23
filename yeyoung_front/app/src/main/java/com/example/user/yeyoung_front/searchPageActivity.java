@@ -1,15 +1,9 @@
 package com.example.user.yeyoung_front;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.constraint.ConstraintSet;
-import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -24,7 +18,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class searchPageActivity extends AppCompatActivity {
@@ -32,8 +25,6 @@ public class searchPageActivity extends AppCompatActivity {
     ArrayList<String> prod_score = new ArrayList<>();
     static float density;
     static int dpHeight, dpWidth;
-    int cameraRequest = 1;
-    Uri allUri;
 RecyclerView recyclerView;
 CustAdapter custAdapter;
     @Override
@@ -60,24 +51,7 @@ CustAdapter custAdapter;
         }
 //        custAdapter.notifyDataSetChanged();
     }
-    public void cameraView(View v){
-        Uri uri = FileProvider.getUriForFile(this, "com.bignerdranch.android.test.fileprovider", new File(Environment.
-                getExternalStorageDirectory(), "tmp_contact_" + System.currentTimeMillis() + ".jpg"));
-        allUri = uri;
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        intent.putExtra(android.provider.MediaStore.EXTRA_OUTPUT, uri);
-        startActivityForResult(intent, cameraRequest);
-    }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == cameraRequest && resultCode == Activity.RESULT_OK){
-            Intent intent = new Intent(this, showInitialCameraActivity.class);
-            intent.putExtra("image", allUri);
-            startActivity(intent);
-        }
-    }
 }
 
 class CustHolder extends RecyclerView.ViewHolder {

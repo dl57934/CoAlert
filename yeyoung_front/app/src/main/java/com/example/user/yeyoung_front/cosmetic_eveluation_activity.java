@@ -21,7 +21,7 @@ public class cosmetic_eveluation_activity extends AppCompatActivity {
 
         btn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                Intent intent = new Intent(cosmetic_eveluation_activity.this, initialReviewActivity.class);
+                Intent intent = new Intent(cosmetic_eveluation_activity.this,initial_review_activity.class);
                 startActivity(intent);
             }
 

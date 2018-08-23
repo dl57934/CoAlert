@@ -29,8 +29,7 @@
         android:text="사진으로 검색"
         style="@style/textStyle"
         android:textSize="20sp"
-        android:id="@+id/addbtn"
-        android:onClick="cameraView"/>
+        android:id="@+id/addbtn"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview_initial_review"

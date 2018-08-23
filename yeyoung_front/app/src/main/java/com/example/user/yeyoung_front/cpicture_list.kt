@@ -48,12 +48,10 @@ class cpicture_list : AppCompatActivity() {
             items.add(item[i])
         }
         recyclerView.adapter = RecyclerAdapter(applicationContext, items, R.layout.activity_cpicture_list)
-        val intent = intent
-
-        val uri = intent.getParcelableExtra<Uri>("image")
-        try {
+        var intent = intent
+        var uri:Uri = intent.getParcelableExtra("image")
             image = MediaStore.Images.Media.getBitmap(contentResolver, uri)
-            image = Bitmap.createScaledBitmap(image, image.width / 2, image.height / 2, true)
+            image = Bitmap.createScaledBitmap(image, image.width/3 , image.height/3 , true)
             image = rotateBitmap(image)
             datapath = filesDir.toString() + "/tesseract/"
             var langs = arrayOf("eng", "kor")
@@ -66,13 +64,8 @@ class cpicture_list : AppCompatActivity() {
 
             mTess.init(datapath, "eng+kor")
             mTess.setVariable(TessBaseAPI.VAR_CHAR_BLACKLIST, "†é° 、」「!@#$%^&*()_=-[]}{;:'\"\\|~`,./<>?ﬂ")
-            mTess.setImage(image)
-            val test = mTess.utF8Text
-            Log.e("tesseractWords: ", test)
-            mTess.end()
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }
+            Thread.sleep(3000)
+            processImage()
 
     }
 
@@ -136,5 +129,11 @@ class cpicture_list : AppCompatActivity() {
                 copyFiles(lang);
             }
         }
+    }
+    fun processImage(){
+        mTess.setImage(image)
+        val test = mTess.utF8Text
+        Log.e("tesseractWords: ", test)
+        mTess.end()
     }
 }
