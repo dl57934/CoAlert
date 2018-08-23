@@ -17,7 +17,7 @@ public class input_skintype_activity extends AppCompatActivity {
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(input_skintype_activity.this,initial_review_activity.class);
+                Intent intent = new Intent(input_skintype_activity.this,initialReviewActivity.class);
                 startActivity(intent);
             }
         });
