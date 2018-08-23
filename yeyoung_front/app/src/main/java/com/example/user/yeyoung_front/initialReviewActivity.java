@@ -52,6 +52,7 @@ public class initialReviewActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(initialReviewActivity.this, mainScreenActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

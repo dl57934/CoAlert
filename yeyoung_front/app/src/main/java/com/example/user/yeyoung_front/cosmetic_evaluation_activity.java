@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -22,12 +23,18 @@ public class cosmetic_evaluation_activity extends AppCompatActivity {
         receiveIntentData();
         loginActivity.number += 1;
         Button btn = findViewById(R.id.evaluation_confirmed_button);
+        ImageView img = findViewById(R.id.evaluation_prod_pic);
         TextView cosmetic_name = findViewById(R.id.evaluation_product_name);
+        if (loginActivity.number == 1){
+            img.setImageResource(R.drawable.suncream_default);
+        }else if(loginActivity.number == 2){
+            img.setImageResource(R.drawable.similiar_cosmetic1_3);
+        }
         cosmetic_name.setText(name);
         Log.e("discharge: ", String.valueOf(loginActivity.number));
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(cosmetic_evaluation_activity.this, initialReviewActivity.class);
+                Intent intent = new Intent(cosmetic_evaluation_activity.this, mainScreenActivity.class);
                 startActivity(intent);
             }
 

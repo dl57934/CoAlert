@@ -49,17 +49,17 @@ public class mainScreenActivity extends AppCompatActivity {
         img.setImageResource(cosmeticID[num]);
         img.setBackground(new ShapeDrawable(new OvalShape()));
         img.setBackground(getResources().getDrawable(R.drawable.main_circle));
-        img.setClipToOutline(true);
-
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        getApplicationContext(), loginActivity.class);
-                startActivity(intent);  //다음화면으로 넘어간다.
-                //Toast.makeText(getApplicationContext(), "..", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        img.setClipToOutline(true);
+//
+//        img.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(
+//                        getApplicationContext(), loginActivity.class);
+//                startActivity(intent);  //다음화면으로 넘어간다.
+//                //Toast.makeText(getApplicationContext(), "..", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         Lbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,11 +92,11 @@ public class mainScreenActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_search:
                     selectedFragment=new searchFragment();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.navigation_container,selectedFragment).commit();
                     break;
                 case R.id.navigation_add_review:
                     Intent intent = new Intent(mainScreenActivity.this, initialReviewActivity.class);
                     startActivity(intent);
-                    finish();
                     break;
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
@@ -104,12 +104,13 @@ public class mainScreenActivity extends AppCompatActivity {
                     break;
                 case R.id.navigation_bad_elements:
                     selectedFragment=new harmFragment();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.navigation_container,selectedFragment).commit();
                     break;
                 case R.id.navigation_mypage:
                     mTextMessage.setText(R.string.title_mypage);
                     break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.navigation_container,selectedFragment).commit();
+
             return true;
         }
     };
