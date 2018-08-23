@@ -35,7 +35,6 @@ public class loginActivity extends AppCompatActivity {
             }
         });
     }
-
     void permissonCheck() {
         int ReadStoragetPermmission = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE);
         int ReadAudioPermmission = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO);
@@ -51,5 +50,6 @@ public class loginActivity extends AppCompatActivity {
             }
         }
     }
+
 
 }
